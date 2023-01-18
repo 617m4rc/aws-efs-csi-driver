@@ -102,6 +102,12 @@ The following sections are Kubernetes specific. If you are a Kubernetes user, us
 | v0.2.0                 | amazon/aws-efs-csi-driver:v0.2.0 |
 | v0.1.0                 | amazon/aws-efs-csi-driver:v0.1.0 |
 
+## Container Images
+
+|Driver Version | [ECR](https://gallery.ecr.aws/ebs-csi-driver/aws-ebs-csi-driver) Image |
+|---------------------------|-----------------------------------------------------------------------------|
+|v1.4.9                    | public.ecr.aws/efs-csi-driver/aws-efs-csi-driver:v1.4.9                    |
+
 ### Features
 * Static provisioning - EFS file system needs to be created manually first, then it could be mounted inside container as a persistent volume (PV) using the driver.
 * Dynamic provisioning - Uses a persistent volume claim (PVC) to dynamically provision a persistent volume (PV). On Creating a PVC, kuberenetes requests EFS to create an Access Point in a file system which will be used to mount the PV.
